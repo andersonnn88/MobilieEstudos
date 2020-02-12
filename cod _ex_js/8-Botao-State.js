@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-import { View, TextInput, StyleSheet, Text } from 'react-native'
+import { View, TextInput, StyleSheet, Text, Button } from 'react-native'
 
 
 
 function Alterar() {
   const [input, setInput] = useState('anderson');
+  const [backupInput, setBackupInput] = useState('')
 
-
-  const mudarTexto = (texto) => {
-    setInput(texto)
+  const handeClick = () => {
+    setBackupInput(input);
+    setInput('Joao')
   }
 
   return (
@@ -17,9 +18,12 @@ function Alterar() {
         value={input}
         style={styles.TextInput}
         //onChangeText={mudarTexto}
-        onChangeText={t=>setInput(t)}
+        onChangeText={t => setInput(t)}
       />
       <Text>{input}</Text>
+
+      <Button title="Trocar state" onPress={handeClick} />
+      <Text>{backupInput}</Text>
     </>
   )
 }
