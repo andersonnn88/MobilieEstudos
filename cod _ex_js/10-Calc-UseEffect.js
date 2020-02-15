@@ -3,7 +3,6 @@ import { View, TextInput, StyleSheet, Text, Button, TouchableOpacity } from 'rea
 
 
 
-
 export default () => {
   const [bill, setBill] = useState('');
   const [tip, setTip] = useState(0);
