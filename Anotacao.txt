@@ -1,5 +1,5 @@
 ->> publicando 
 
 https://www.youtube.com/watch?v=wYMvzbfBdYI
-
+https://docs.expo.io/versions/latest/distribution/building-standalone-apps/
 ->> set REACT_NATIVE_PACKAGER_HOSTNAME=192.168.0.104
